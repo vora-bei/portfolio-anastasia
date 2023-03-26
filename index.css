@@ -1,0 +1,82 @@
+body {
+  font-family: 'Montserrat';
+  font-style: normal;
+
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 120%;
+  /* identical to box height, or 77px */
+  color: #000000;
+}
+
+h2 {
+  margin: 20px 0 5px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+
+}
+
+h3 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+
+  color: #999999;
+}
+
+.wrapper {
+  display: grid;
+  margin-top: 65px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  row-gap: 60px;
+}
+
+@media screen and (max-width: 1500px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 0px;
+  }
+
+  h1 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 120%;
+    /* identical to box height, or 77px */
+    color: #000000;
+  }
+}
+
+main {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 150px;
+}
+
+.image {
+  width: 100%;
+}
